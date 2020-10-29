@@ -1,0 +1,84 @@
+// import
+
+// const keys = [
+//   { key: "clear", id: "clear" },
+//   { key: "=", id: "equals" },
+//   { key: "/", id: "divide" },
+//   { key: "*", id: "multiply" },
+//   { key: "7", id: "seven" },
+//   { key: "8", id: "eight" },
+//   { key: "9", id: "nine" },
+//   { key: "-", id: "subtract" },
+//   { key: "4", id: "four" },
+//   { key: "5", id: "five" },
+//   { key: "6", id: "six" },
+//   { key: "+", id: "add" },
+//   { key: "1", id: "one" },
+//   { key: "2", id: "two" },
+//   { key: "3", id: "three" },
+//   { key: ".", id: "decimal" },
+//   { key: "0", id: "zero" },
+//   { key: "enter", id: "enter" },
+// ];
+
+// const ButtonPad = () => (
+//   <div className="button-pad">
+//     {keys.map((button) => {
+//       return (
+//         <button key={button.key} id={button.id} className="button">
+//           {button.key}
+//         </button>
+//       );
+//     })}
+//   </div>
+// );
+
+// const Display = () => (
+//   <div id="display">
+//     <input value={""} className="text-box" />
+//   </div>
+// );
+
+// class App extends React.Component {
+//   constructor(props) {
+//     super(props);
+
+//     this.state = {
+//       input: "",
+//       value: "",
+//     };
+//   }
+
+//   executeCalculation(input) {
+//     return this.input;
+//   }
+
+//   handleClick(e) {
+//     if (
+//       e.target.value !== "=" ||
+//       e.target.value !== "clear" ||
+//       e.target.value !== "enter"
+//     ) {
+//       this.input += e.target.value;
+//     } else if (e.target.value === "=" || e.target.value === "enter") {
+//       this.input = this.executeCalculation(this.input);
+//     } else {
+//       this.input = "";
+//     }
+//   }
+
+//   handleChange(e) {
+//     this.value = this.input;
+//   }
+
+//   render() {
+//     return (
+//       <div className="calculator">
+//         <Display value={this.props.value} onChange={this.handleChange} />
+//         <ButtonPad onClick={this.handleClick} />
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;

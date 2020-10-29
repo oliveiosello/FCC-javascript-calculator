@@ -1,13 +1,88 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0ffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button-pad {
+  display: block;
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 208px;
+  height: 260px;
+}
+
+.calculator {
+  box-shadow: 15px 15px 25px #5f9ea0;
+  background-image: url(./images/M605-formica-deco-metal.jpg);
+  background-image: radial-gradient(#663300, #ff6633, #cc6600);
+  border: none;
+  border: 8px #ff6633;
+  border-style: outset;
+  border-radius: 8px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 230px;
+  height: 400px;
+}
+
+.button:active {
+  border: none;
+  border: 4px #acacaf;
+  border-radius: 5px;
+  border-style: inset;
+  background-color: #8c8c8c;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button {
+  background-image: radial-gradient(#d7dbdd, #909497);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  border: 4px #acacaf;
+  border-radius: 5px;
+  border-style: outset;
+  width: 50px;
+  height: 50px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "digital-clock-font";
+  src: local("digital-clock-font"), url(./fonts/digital-clock-font.ttf);
+}
+
+.text-box {
+  font-family: "digital-clock-font";
+  color: black;
+  text-shadow: 0.5px 0.5px 2px black;
+  font-size: 40px;
+  letter-spacing: 1.5px;
+  text-align: right;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: darkolivegreen;
+  width: 202px;
+  height: 45px;
+}
+
+.display {
+  background-color: transparent;
+  margin: auto;
+  width: 208px;
+  height: 50px;
+}
+
+.by-line {
+  text-align: right;
+  color: #d4af37;
+  text-shadow: 1px 1px #663300;
+  font-size: 18px;
+  padding: 8px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
 }
